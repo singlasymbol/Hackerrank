@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+int i,j,k,n,t,sum=0,l,arr[1000];
+    scanf("%d",&t);
+    for(j=0;j<t;j++)
+        {
+        sum=0;
+    scanf("%d",&n);
+    scanf("%d",&k);
+        
+    for(i=0;i<n;i++)
+        {
+        scanf("%d",&arr[i]);
+    }
+    
+   // printf("Hello world\r\n");
+    for(i=0;i<n;i++)
+        {
+        
+        if(arr[i]<=0)
+            {
+         //   printf("the element lesser is %d\n",arr[i]);
+            sum++;
+        }
+     }
+  //  printf("%d\n",sum);
+    if(sum>=k)
+        {
+     //   printf("NO\r\n");
+        printf("NO\n");
+    }
+    else
+        printf("YES\n");
+    }
+        /* Enter your code he
+    re. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
